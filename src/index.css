@@ -1,0 +1,157 @@
+:root {
+  --bg: #f7f7f9;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --accent: #3b5bdb;
+  --border: #e5e7eb;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.link-btn {
+  border: none;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+.post-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.card-title {
+  margin: 0 0 0.25rem;
+}
+
+.card-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: var(--accent);
+}
+
+.card-meta {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.card-summary {
+  margin: 0 0 1rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like-btn {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  opacity: 0.9;
+}
+
+.read-more {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.comments {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #eef2ff;
+  border-radius: 8px;
+}
+
+a {
+  color: var(--accent);
+}
